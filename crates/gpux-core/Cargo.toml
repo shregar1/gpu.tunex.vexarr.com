@@ -1,0 +1,14 @@
+[package]
+name = "gpux-core"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+metal.workspace = true
+objc.workspace = true
+block.workspace = true
+half.workspace = true
+bytemuck.workspace = true
+thiserror.workspace = true
+log.workspace = true
+parking_lot.workspace = true

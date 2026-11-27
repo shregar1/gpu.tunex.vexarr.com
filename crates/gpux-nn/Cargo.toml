@@ -1,0 +1,14 @@
+[package]
+name = "gpux-nn"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+gpux-core.workspace = true
+gpux-tensor.workspace = true
+gpux-shaders.workspace = true
+half.workspace = true
+bytemuck.workspace = true
+thiserror.workspace = true
+log.workspace = true
+rand.workspace = true

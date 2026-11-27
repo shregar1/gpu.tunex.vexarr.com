@@ -1,0 +1,11 @@
+[package]
+name = "gpux-shaders"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+gpux-core.workspace = true
+thiserror.workspace = true
+log.workspace = true
+
+[build-dependencies]

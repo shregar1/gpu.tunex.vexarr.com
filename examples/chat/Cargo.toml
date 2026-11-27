@@ -1,0 +1,15 @@
+[package]
+name = "chat-example"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+gpux-core.workspace = true
+gpux-tensor.workspace = true
+gpux-nn.workspace = true
+gpux-train.workspace = true
+serde_json.workspace = true
+
+[[bin]]
+name = "chat"
+path = "src/main.rs"

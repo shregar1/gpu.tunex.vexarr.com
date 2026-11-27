@@ -1,0 +1,45 @@
+[workspace]
+members = [
+    "crates/gpux-core",
+    "crates/gpux-tensor",
+    "crates/gpux-nn",
+    "crates/gpux-train",
+    "crates/gpux-shaders",
+    "examples/mnist",
+    "examples/gpt2-train",
+    "examples/text-train",
+    "examples/benchmark",
+    "examples/inference",
+    "examples/server",
+    "examples/chat",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/user/gpux"
+
+[workspace.dependencies]
+gpux-core = { path = "crates/gpux-core" }
+gpux-tensor = { path = "crates/gpux-tensor" }
+gpux-nn = { path = "crates/gpux-nn" }
+gpux-train = { path = "crates/gpux-train" }
+gpux-shaders = { path = "crates/gpux-shaders" }
+
+metal = "0.29"
+objc = "0.2"
+block = "0.1"
+half = { version = "2.4", features = ["num-traits"] }
+rand = "0.8"
+num-traits = "0.2"
+thiserror = "2"
+log = "0.4"
+env_logger = "0.11"
+bytemuck = { version = "1", features = ["derive"] }
+parking_lot = "0.12"
+rayon = "1.10"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+regex = "1"

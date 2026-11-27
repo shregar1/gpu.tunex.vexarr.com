@@ -1,0 +1,16 @@
+[package]
+name = "server-example"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+gpux-core.workspace = true
+gpux-tensor.workspace = true
+gpux-nn.workspace = true
+gpux-train.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+
+[[bin]]
+name = "server"
+path = "src/main.rs"

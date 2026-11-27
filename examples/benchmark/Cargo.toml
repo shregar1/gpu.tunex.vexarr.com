@@ -1,0 +1,17 @@
+[package]
+name = "benchmark-example"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "benchmark"
+path = "src/main.rs"
+
+[dependencies]
+gpux-core.workspace = true
+gpux-tensor.workspace = true
+gpux-nn.workspace = true
+gpux-train.workspace = true
+env_logger.workspace = true
+rand.workspace = true
+rayon.workspace = true

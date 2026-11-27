@@ -1,0 +1,18 @@
+[package]
+name = "gpt2-train-example"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "gpt2-train"
+path = "src/main.rs"
+
+[dependencies]
+gpux-core.workspace = true
+gpux-tensor.workspace = true
+gpux-nn.workspace = true
+gpux-train.workspace = true
+gpux-shaders.workspace = true
+rand.workspace = true
+env_logger.workspace = true
+log.workspace = true

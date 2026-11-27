@@ -1,0 +1,15 @@
+[package]
+name = "gpux-tensor"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+gpux-core.workspace = true
+gpux-shaders.workspace = true
+half.workspace = true
+bytemuck.workspace = true
+thiserror.workspace = true
+log.workspace = true
+parking_lot.workspace = true
+rand.workspace = true
+num-traits.workspace = true
